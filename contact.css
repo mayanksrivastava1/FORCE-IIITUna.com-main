@@ -1,0 +1,719 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #efefef;
+    
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+/* Navigation bar -> Navigation Logo */
+
+.navigationlogo{
+    z-index: 1;
+    position: absolute;
+    margin: 15px;
+    padding: 5px 0;
+    background: #fff;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  
+  .navigationlogo img{
+    width:160px;
+    padding: 7.5px 30px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  /* Navigation bar -> Navigation Menu */
+  .navigationmenu{
+    display: flex;
+    justify-content: end;
+  }
+  .navigationmenu ul{
+  
+    z-index: 1;
+    position: absolute;
+    margin: 15px;
+    padding: 5px 0;
+    background: #fff;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  
+  .navigationmenu ul li{
+    list-style: none;
+    text-align: center;
+    display: block;
+    border-right: 1px solid rgba(0,0,0,0.2);
+  }
+  
+  .navigationmenu ul li:last-child{
+    border-right: none;
+  }
+  
+  .navigationmenu ul li a{
+    text-decoration: none;
+    padding: 0 50px;
+    display: block;
+  }
+  
+  .navigationmenu ul li a .icon{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto 10px;
+  }
+  
+  .navigationmenu ul li a .icon .fa{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 25px;
+    transition: 0.5s;
+    color: #000;
+  }
+  
+  .navigationmenu ul li a .icon .fa:last-child{
+    color: crimson;
+  }
+  
+  .navigationmenu ul li a:hover .icon .fa{
+    transform: translateY(-100%);
+  }
+  
+  .navigationmenu ul li a .name{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .navigationmenu ul li a .name span{
+    display: block;
+    position: relative;
+    color: #000;
+    font-size: 15px;
+    line-height: 20px;
+    transition: 0.5s;
+    
+  }
+  
+  .navigationmenu ul li a .name span::before{
+    content: attr(data-text);
+    position: absolute;
+    color: crimson;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .navigationmenu ul li a:hover .name span{
+    transform: translateY(20px);
+  }
+  
+  
+/* Hamburger Menu */
+.mobmenu{
+  display: none;
+  position: relative;
+  z-index: 3;
+}
+
+
+.ham-menu{
+  z-index: 1;
+  position: absolute;
+  margin: 8px;
+  padding: 3px 0;
+  background: #fff;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  right: 0;
+  
+}
+
+
+
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+  
+  
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a{
+  color: white;
+  text-decoration: none;
+  font-size:15px;
+  
+display: flex;
+  
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  
+.navigationlogo{
+    z-index: 1;
+    position: absolute;
+    margin: 8px;
+    padding: 3px 0;
+    background: #fff;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  
+  .navigationlogo img{
+    width:83px;
+    padding: 5px 10px;
+    display: block;
+    margin: 0 auto 5px;
+  }
+
+
+  
+  .mobmenu{
+    display: block;
+  }
+  .navigationmenu{
+  display: none;
+}
+
+
+.nav-links ul li i {
+  
+  color: white;
+  
+}
+
+.nav-links ul li span{
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 13px;
+}
+
+
+
+
+
+
+  .nav-links ul li{
+      display: block;
+  }
+
+  .nav-links{
+      position: fixed;
+      background: crimson;
+      height: 100vh;
+      width: 250px;
+      top: 0;
+      right: -250px;
+      text-align: left;
+      z-index: 2;
+      transition: 0.5s;
+  }
+
+  nav .fa{
+      display: block;
+      color: crimson;
+      font-size: 25px;
+      cursor: pointer;
+      margin: 10px 20px;
+      
+  }
+  nav .closebtn{
+    color: white;
+  }
+
+  nav .openbtn{
+    font-size: 20px;
+  }
+  
+
+  .nav-links ul{
+      padding: 30px;
+  }
+
+  
+}
+
+
+
+  /* Contact Banner */
+  .teambanner{
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(contact_banner/contact_banner_img1.jpg);
+    background-position: center;
+    background-size: cover;
+    /* text-align: center; */
+    position: relative;
+    top: 0;
+}
+
+.teambanner div{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 700px){
+  .teambanner div{
+    font-size: 30px;
+  }
+}
+  
+  
+
+
+
+
+/* Contact Base Design */
+
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.contactUs .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.contactUs .title h2{
+    color: crimson;
+    font-weight: 500;
+
+}
+
+@media screen and (max-width: 700px) {
+  
+.contactUs .title h2{
+  font-size: 25px;
+}
+}
+
+
+
+
+
+
+.form{
+    grid-area: form;
+}
+
+.info{
+    grid-area: info;
+}
+
+.map{
+    grid-area: map;
+}
+
+.contact{
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contact h3{
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Form */
+
+.formBox{
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+
+.inputBox span{
+    color: #18b7ff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"]{
+    background: #ff578b;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+.inputBox ::placeholder{
+    color: #999;
+}
+
+/* info */
+.info{
+    background: #0e3858;
+}
+
+.info h3{
+    color: #fff;
+}
+
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .infoBox div p{
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.info .infoBox div a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sci{
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a{
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+
+.sci li a:hover{
+    color: #fff;
+}
+
+/* Map */
+ .map{
+     padding: 0;
+ }
+
+ .map iframe{
+     width: 100%;
+     height: 100%;
+ }
+
+ /* Responsive Design */
+ @media (max-width: 991px) {
+     body{
+         background: #03a9f5;
+     }
+     .contactUs{
+         padding: 20px;
+     }
+     .box{
+         
+         grid-template-columns: 1fr;
+         grid-template-rows: auto;
+         grid-template-areas: 
+         "form"
+         "info"
+         "map";
+     }
+    
+     .formBox .row50{
+         display: flex;
+         gap: 0;
+         flex-direction: column;
+     }
+     .inputBox{
+         width: 100%;
+     }
+     .contact{
+         padding: 30px;
+     }
+     .map{
+        min-height: 300px;
+        padding: 0;
+    }
+ }
+
+
+
+/* Footer */
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  
+  footer .fcontainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  footer .fcontainer .sec{
+    margin-right: 30px;
+  }
+  
+  footer .fcontainer .sec.aboutus{
+    width: 40%;
+  }
+  
+  footer .fcontainer h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  footer .fcontainer h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+  }
+  
+  footer p{
+    color: #999;
+  }
+  
+  .scif{
+    margin-top: 20px;
+    display: flex;
+  }
+  .scif li{
+    list-style: none;
+  }
+  .scif li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .scif li a:hover{
+    background: #f00;
+  }
+  
+  .scif li a .fa{
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .quickLinks{
+    position: relative;
+    width: 25%;
+  
+  }
+  
+  .quickLinks ul li{
+    list-style: none;
+  }
+  
+  .quickLinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .quickLinks ul li a:hover{
+    color: #fff;
+  }
+  
+  .contactf{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+  }
+  
+  .contactf .infof{
+    position: relative;
+  }
+  
+  .contactf .infof li{
+    display: flex;
+    margin-bottom: 16px;
+  }
+  
+  .contactf .infof li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .contactf .infof li span{
+    color: #999;
+  
+  }
+  
+  .contactf .infof li a{
+    color: #999;
+    text-decoration: none;
+  }
+  
+  .contactf .infof li a:hover{
+    color: #fff;
+  }
+  
+  .copyrightText{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color:#999;
+  }
+  
+  @media (max-width:991px) {
+    footer{
+      padding: 40px;
+    }
+    footer .fcontainer{
+      flex-direction: column;
+    }
+    footer .fcontainer .sec{
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+    footer .fcontainer .sec.aboutus, .quickLinks, .contactf{
+      width: 100%;
+    }
+    .copyrightText{
+      
+      padding: 8px 40px ;
+      
+    }
+  }
+  
+  .fa-heart-o{
+    color: crimson;
+  }
+
+   /* Preloader */
+
+#preloader{
+  background: #fff url(loader1.gif) no-repeat center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORCE-Contact</title>
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    <!-- Navigation bar -->
+<div class="navigationbar">
+    <!-- Navigation Logo -->
+    <div class="navigationlogo">
+      <img src="force-logo.png" alt="">
+    </div>
+
+    <!-- Navigation menu -->
+    <div class="navigationmenu">
+      <ul>
+          <li>
+              <a href="index.html">
+                  <div class="icon">
+                      <i class="fa fa-home" aria-hidden="true"></i>
+                      <i class="fa fa-home" aria-hidden="true"></i>
+                  </div>
+                  <div class="name"><span data-text="Home">Home</span></div>
+              </a>
+          </li>
+          <li>
+              <a href="about.html">
+                  <div class="icon">
+                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="name"><span data-text="About">About</span></div>
+              </a>
+          </li>
+          <li>
+              <a href="team.html">
+                  <div class="icon">
+                      <i class="fa fa-users" aria-hidden="true"></i>
+                      <i class="fa fa-users" aria-hidden="true"></i>
+                  </div>
+                  <div class="name"><span data-text="Team">Team</span></div>
+              </a>
+          </li>
+          <li>
+              <a href="gallery.html">
+                  <div class="icon">
+                      <i class="fa fa-picture-o" aria-hidden="true"></i>
+                      <i class="fa fa-picture-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="name"><span data-text="Gallery">Gallery</span></div>
+              </a>
+          </li>
+          <li>
+              <a href="events.html">
+                  <div class="icon">
+                      <i class="fa fa-calendar" aria-hidden="true"></i>
+                      <i class="fa fa-calendar" aria-hidden="true"></i>
+                  </div>
+                  <div class="name"><span data-text="Events">Events</span></div>
+              </a>
+          </li>
+          <li>
+              <a href="contact.html">
+                  <div class="icon">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      
+                  </div>
+                  <div class="name"><span data-text="Contact">Contact</span></div>
+              </a>
+          </li>
+      </ul>
+    </div>
+
+    
+    <!-- Hamburger Menu -->
+    <div class="mobmenu">
+        <div class="ham-menu">
+          <nav>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times closebtn" aria-hidden="true" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html"> <i class="fa fa-home" aria-hidden="true"></i><span>HOME</span></a></li>
+                <li><a href="about.html"><i class="fa fa-file-text-o" aria-hidden="true"></i><span>ABOUT</span></a></li>
+                <li><a href="team.html"><i class="fa fa-users" aria-hidden="true"></i><span>TEAM</span></a></li>
+                <li><a href="gallery.html"><i class="fa fa-picture-o" aria-hidden="true"></i><span>GALLERY</span></a></li>
+                <li><a href="events.html"><i class="fa fa-calendar" aria-hidden="true"></i><span>EVENTS</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i><span>CONTACT</span></a></li>
+              </ul>
+            </div>
+            <i class="fa fa-bars openbtn" aria-hidden="true" onclick="showMenu()"></i>
+          </nav>
+        </div>
+      </div>
+    
+    
+  </div>
+
+
+    <!-- Contact Banner Starts Here -->
+
+    <section class="teambanner">
+        <!-- Content -->
+
+            <div>
+                CONTACT US
+            </div>
+    </section>
+
+<!-- Contact Banner Ends Here -->
+
+    <div class="contactUs">
+        <div class="title">
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="box">
+
+            <!-- Form -->
+            <div class="contact form">
+                <h3>Send a Message</h3>
+                <form>
+                    <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>First Name</span>
+                                <input type="text" placeholder="John" required>
+                            </div>
+                            <div class="inputBox">
+                                <span>Last Name</span>
+                                <input type="text" placeholder="Doe" required>
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="email" placeholder="johndoe@email.com" required>
+                            </div>
+                            <div class="inputBox">
+                                <span>Mobile</span>
+                                <input type="tel"  placeholder="+91 987 654 3210" required>
+                            </div>
+                        </div>
+
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Message</span>
+                                <textarea placeholder="Write your message here..." required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Info Box -->
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infoBox">
+                    <div>
+                        <span>
+                            <ion-icon name="location"></ion-icon>
+                        </span>
+                        <p>IIIT Una, Himachal Pradesh <br>INDIA</p>
+                    </div>
+
+                    <div>
+                        <span>
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <a href="mailto:loremipsum@email.com">force@iiitu.ac.in</a>
+                    </div>
+                
+
+                <div>
+                    <span>
+                        <ion-icon name="call"></ion-icon>
+                    </span>
+                    <a href="tel:+919876543210">+91 987 654 3210</a>
+                </div>
+            </div>
+
+                <ul class="sci">
+                    <li><a href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                </ul>
+            </div>
+
+            <!-- Map -->
+            <div class="contact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5934021584935!2d76.18907811462987!3d31.480369256267085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391adb198180014f%3A0xbf76347093a3aa9a!2sIIIT%20Una%20Campus!5e0!3m2!1sen!2sin!4v1645785118679!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    
+  <!-- Footer -->
+
+  <footer>
+    <div class="fcontainer">
+      <div class="sec aboutus">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio alias similique illo. Veritatis ipsum quia
+          voluptas quod earum distinctio, sit dolore quos facere quibusdam. Illum?</p>
+
+        <ul class="scif">
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="sec quickLinks">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="sec contactf">
+        <h2>Contact Info</h2>
+        <ul class="infof">
+          <li>
+            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+            <span>IIIT Una, Himachal Pradesh <br> INDIA</span>
+          </li>
+          <li>
+            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <p><a href="tel:+91 987 654 3210">+91 987 654 3210</a></p>
+          </li>
+          <li>
+            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <p><a href="mailto:kdjfo@.com">force@iiitu.ac.in</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  
+
+
+ 
+
+  
+    <!-- JS for ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- JS for Preloader -->
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display="none";
+        })
+    </script>
+
+      <!-- -------------- JavaScript for Toggle Menu -------------- -->
+      <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-250px";
+        }
+    </script>
+</body>
+
+</html>

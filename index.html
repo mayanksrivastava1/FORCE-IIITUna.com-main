@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORCE-Forum of Computer Engineers</title>
+  <link rel="stylesheet" href="style.css">
+
+
+
+
+  <!-- Link for fontawesome icon -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Link for scroll animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Link for animation -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+</head>
+
+<body>
+
+  <!-- Preloader -->
+
+  <div id="preloader"></div>
+
+
+
+
+
+
+  <div class="mainbanner">
+
+
+    <!-- Navigation bar -->
+    <div class="navigationbar">
+      <!-- Navigation Logo -->
+      <div class="navigationlogo">
+        <img src="force-logo.png" alt="">
+      </div>
+
+      <!-- Navigation menu -->
+      <div class="navigationmenu">
+        <ul>
+          <li>
+            <a href="index.html">
+              <div class="icon">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </div>
+              <div class="name"><span data-text="Home">Home</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              <div class="icon">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+              </div>
+              <div class="name"><span data-text="About">About</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="team.html">
+              <div class="icon">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+              </div>
+              <div class="name"><span data-text="Team">Team</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="gallery.html">
+              <div class="icon">
+                <i class="fa fa-picture-o" aria-hidden="true"></i>
+                <i class="fa fa-picture-o" aria-hidden="true"></i>
+              </div>
+              <div class="name"><span data-text="Gallery">Gallery</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="events.html">
+              <div class="icon">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+              </div>
+              <div class="name"><span data-text="Events">Events</span></div>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              <div class="icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+
+              </div>
+              <div class="name"><span data-text="Contact">Contact</span></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- Hamburger Menu -->
+      <div class="mobmenu">
+        <div class="ham-menu">
+          <nav>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times closebtn" aria-hidden="true" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html"> <i class="fa fa-home" aria-hidden="true"></i><span>HOME</span></a></li>
+                <li><a href="about.html"><i class="fa fa-file-text-o" aria-hidden="true"></i><span>ABOUT</span></a></li>
+                <li><a href="team.html"><i class="fa fa-users" aria-hidden="true"></i><span>TEAM</span></a></li>
+                <li><a href="gallery.html"><i class="fa fa-picture-o" aria-hidden="true"></i><span>GALLERY</span></a>
+                </li>
+                <li><a href="events.html"><i class="fa fa-calendar" aria-hidden="true"></i><span>EVENTS</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i><span>CONTACT</span></a>
+                </li>
+              </ul>
+            </div>
+            <i class="fa fa-bars openbtn" aria-hidden="true" onclick="showMenu()"></i>
+          </nav>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <!-- SVG for wavy banner -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,128L48,160C96,192,192,256,288,245.3C384,235,480,149,576,138.7C672,128,768,192,864,213.3C960,235,1056,213,1152,202.7C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+
+
+
+
+
+
+
+
+
+    <!-- For main banner title -->
+
+    <div class="animated-title">
+      <div class="text-top">
+        <div>
+          <span>FORCE</span>
+          <!-- <span>FORCE</span> -->
+        </div>
+      </div>
+      <div class="text-bottom">
+        <div>Forum of Computer Engineers</div>
+      </div>
+    </div>
+
+    <div class="head_for_mobile">
+      
+        <div class="mobtxt_for_mobile">
+          <div class="animate__animated animate__fadeIn animate__delay-0.5s">FORCE</div><div class="stline"></div><div class="bigmsg animate__animated animate__fadeInUp animate__delay-1s">Forum of Computer Engineers</div>
+        </div>
+
+
+      
+      
+    </div>
+
+
+
+
+    <div class="charmain" data-aos="fade-left">
+      <img src="characters/character8.png" alt="">
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Main Content -->
+
+  <section class="maincontent">
+    <div class="row1 row">
+      <div class="column11">
+        <div class="characterimg1 img1animation" data-aos="fade-right">
+          <img src="characters/character3.png" alt="">
+        </div>
+
+      </div>
+
+
+      <div class="column12">
+        <h1>FORCE-Forum of Computer Engineers</h1>
+        <p><strong>FORCE</strong> is the association of computer science in IIIT Una. Our main objective is to encourage
+          open source software, improving coding culture, project building and introducing new platforms to work on. It
+          provides opportunities for students to broaden their knowledge in the field of computer science and interact
+          with other students who have shared interests.</p>
+      </div>
+    </div>
+
+    <div class="row2 row">
+      <div class="column21">
+        <h1>WHAT WE DO?</h1>
+        <p><strong>FORCE</strong> is the association of computer science enthusiasts of IIIT Una, aimed at lending a
+          helping hand to all the beginners in the world of programming. We have BITERATION,a student chapter on
+          codechef of IIIT Una to provide students a platform to compete against the best of minds. Our other events
+          include short and long challenges, a technical fest MERAKI and a yearly hackathon. <br> Peanut butter jelly
+          time, yeah. </p>
+      </div>
+      <div class="column22">
+        <div class="characterimg2" data-aos="fade-left">
+          <img src="characters/character5.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="row3 row">
+      <div class="column31">
+        <div class="characterimg3" data-aos="fade-right">
+          <img src="characters/character4.png" alt="">
+        </div>
+      </div>
+      <div class="column32">
+        <h1>WHY SHOULD YOU JOIN OUR COMMUNITY?</h1>
+        <ul>
+          <li>To improve your coding skills.</li>
+          <li>To become a full stack developer.</li>
+          <li>To excel at graphic designing.</li>
+          <li>To improve your speaking skills.</li>
+          <li>To learn teamwork.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row4 row">
+      <div class="column41">
+        <h1>WORKSHOPS</h1>
+        <p>We regularly organize workshops over different stacks that will be helpful in your entire college life, that
+          will cover tech, non-tech and professional events.</p>
+        <p><strong>Previous Workshops That We Organized:</strong></p>
+        <ul>
+          <li>Web Development</li>
+          <li>Android Development</li>
+          <li>Flutter Development</li>
+          <li>React</li>
+          <li>Resume Building</li>
+          <li>Git and Github</li>
+        </ul>
+        <p>And many more workshops we organize and cover all stacks.</p>
+
+      </div>
+      <div class="column42">
+        <div class="characterimg4" data-aos="fade-left">
+          <img src="characters/character2.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="row5 row">
+      <div class="column51">
+        <div class="characterimg5" data-aos="fade-right">
+          <img src="characters/character7.png" alt="">
+        </div>
+      </div>
+      <div class="column52">
+        <h1>EVENTS</h1>
+        <p>Force always organizes many events in different areas.</p>
+
+        <p><strong>Some of the events are given below:</strong></p>
+        <ul>
+          <li>Workshops</li>
+          <li>Career Guidance Sessions</li>
+          <li>Resume Reviews</li>
+          <li>Coding Events</li>
+          <li>Hackathons</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Honors and Achievements -->
+
+
+  <div class="honors">
+    <div class="max-width">
+      <h1>Honors and Achievements</h1>
+      <div class="content">
+        <div class="card">
+          <div class="box">
+            <i class="fa fa-desktop"></i>
+            <h2>Smart India Hackathon</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, soluta. Quod saepe ex quis. Iusto.</p>
+            <div class="achieved">
+
+              <div class="team1">
+
+                <ul>
+                  <h2>Team 1</h2>
+                  <li>Shubham Kamboj</li>
+                  <li>Arpana Mehta</li>
+                  <li>Mratyunjay Soni</li>
+                  <li>Anurag Chandel</li>
+                  <li>Devesh Singh</li>
+                  <li>Abhijeet Rai</li>
+                </ul>
+              </div>
+              <div class="team2">
+                <ul>
+                  <h2>Team 2</h2>
+                  <li>Priyank Kumar Gupta</li>
+                  <li>Pradeep Kumar</li>
+                  <li>Kritagya Khandewal</li>
+                  <li>Kaish Ansari</li>
+                  <li>Anshu Akansha</li>
+                  <li>Ayushi Akansha</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <i class="fa fa-code"></i>
+            <h2>GSOC</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, soluta. Quod saepe ex quis. Iusto.</p>
+            <div class="achieved">
+
+              <div class="team1">
+
+                <ul>
+                  <h2>These students were selected for the Google Summer of Code</h2>
+                  <li>Shivam Tripathi</li>
+                  <li>Udit Gulati</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <i class="fa fa-mobile"></i>
+            <h2>ACM-ICPC</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, soluta. Quod saepe ex quis. Iusto.</p>
+            <div class="achieved">
+
+              <div class="team1">
+
+                <ul>
+                  <h2>Team 1</h2>
+                  <li>Amit Yadav</li>
+                  <li>Udit Gulati</li>
+                  <li>Anurag Bansal</li>
+                </ul>
+              </div>
+              <div class="team2">
+                <ul>
+                  <h2>Team 2</h2>
+                  <li>Jatin Nagpal</li>
+                  <li>Anany Sharma</li>
+                  <li>Anant Kumar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- ---- Call to Action ---- -->
+
+  <section class="cta">
+    <h1>As we have to follow proper rules at programming to make it run properly. Similarly, Force members have to
+      follow particular protocols to clarify our mission, values and principles.</h1>
+    <a href="code_of_conduct.html" class="hero-btn">Code of Conduct</a>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FAQ -->
+
+
+
+
+
+  <main>
+    <h1>FAQs</h1>
+    <div class="faq open">
+      <!--FAQ-1-->
+      <div class="faq_text">
+
+        <span id="plusact">
+          <ion-icon class="minus" id="minusid1" name="add-outline" onclick="minfaq1()"></ion-icon>
+        </span>
+        <span>
+          <ion-icon class="plus" name="remove-outline" id="plusid1" onclick="maxfaq1()"></ion-icon>
+        </span>
+        <h2>Does the Force organize events?</h2>
+        <div id="paradiv1">
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, consequatur blanditiis
+            dolorum tempora, optio accusantium maiores quam deserunt veritatis fuga molestias, doloremque molestiae modi
+            voluptatum nihil distinctio quisquam repellat? Quos ad placeat est quae. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Laborum consequuntur doloremque, aliquid nesciunt odit aliquam voluptates
+            adipisci. Aspernatur, eos! Mollitia enim deserunt, vel explicabo provident distinctio ad animi magni
+            inventore.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="faq open">
+      <!--FAQ-2-->
+      <div class="faq_text">
+
+        <span>
+          <ion-icon class="minus" id="minusid2" name="add-outline" onclick="minfaq2()"></ion-icon>
+        </span>
+        <span>
+          <ion-icon class="plus" name="remove-outline" id="plusid2" onclick="maxfaq2()"></ion-icon>
+        </span>
+        <h2>When will the Force organize workshops?</h2>
+        <div id="paradiv2">
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, consequatur blanditiis
+            dolorum tempora, optio accusantium maiores quam deserunt veritatis fuga molestias, doloremque molestiae modi
+            voluptatum nihil distinctio quisquam repellat? Quos ad placeat est quae. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Laborum consequuntur doloremque, aliquid nesciunt odit aliquam voluptates
+            adipisci.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="faq open">
+      <!--FAQ-3-->
+      <div class="faq_text">
+
+        <span>
+          <ion-icon class="minus" id="minusid3" name="add-outline" onclick="minfaq3()"></ion-icon>
+        </span>
+        <span>
+          <ion-icon class="plus" name="remove-outline" id="plusid3" onclick="maxfaq3()"></ion-icon>
+        </span>
+        <h2>Does the Force organize non-tech events?</h2>
+        <div id="paradiv3">
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, consequatur blanditiis
+            dolorum tempora, optio accusantium maiores quam deserunt veritatis fuga molestias, doloremque molestiae modi
+            voluptatum nihil distinctio quisquam repellat? Quos ad placeat est quae. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Laborum consequuntur doloremque, aliquid nesciunt odit aliquam voluptates
+            adipisci.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="faq open">
+      <!--FAQ-4-->
+      <div class="faq_text">
+
+        <span>
+          <ion-icon class="minus" id="minusid4" name="add-outline" onclick="minfaq4()"></ion-icon>
+        </span>
+        <span>
+          <ion-icon class="plus" name="remove-outline" id="plusid4" onclick="maxfaq4()"></ion-icon>
+        </span>
+        <h2>Is IIITU college website handled by the Force club?</h2>
+        <div id="paradiv4">
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, consequatur blanditiis
+            dolorum tempora, optio accusantium maiores quam deserunt veritatis fuga molestias, doloremque molestiae modi
+            voluptatum nihil distinctio quisquam repellat? Quos ad placeat est quae. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Laborum consequuntur doloremque, aliquid nesciunt odit aliquam voluptates
+            adipisci.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="faq open">
+      <!--FAQ-4-->
+      <div class="faq_text">
+
+        <span>
+          <ion-icon class="minus" id="minusid5" name="add-outline" onclick="minfaq5()"></ion-icon>
+        </span>
+        <span>
+          <ion-icon class="plus" name="remove-outline" id="plusid5" onclick="maxfaq5()"></ion-icon>
+        </span>
+        <h2>When will MERAKI be conducted?</h2>
+        <div id="paradiv5">
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, consequatur blanditiis
+            dolorum tempora, optio accusantium maiores quam deserunt veritatis fuga molestias, doloremque molestiae modi
+            voluptatum nihil distinctio quisquam repellat? Quos ad placeat est quae. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Laborum consequuntur doloremque, aliquid nesciunt odit aliquam voluptates
+            adipisci.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+
+  <!-- Testimonial Section -->
+  <div class="testimonials">
+    <div class="inner">
+      <h1>REVIEWS</h1>
+      <div class="border"></div>
+
+      <div class="rowt">
+        <div class="colt">
+          <div class="testimonial">
+            <img src="team images/team member(200x200)/team member 6.jpg" alt="">
+            <div class="namet">AANYA</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolor quibusdam perferendis modi, id
+              nemo.</p>
+          </div>
+        </div>
+
+        <div class="colt">
+          <div class="testimonial">
+            <img src="team images/team member(200x200)/team member 1.jpg" alt="">
+            <div class="namet">AVINASH</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolor quibusdam perferendis modi, id
+              nemo.</p>
+          </div>
+        </div>
+
+        <div class="colt">
+          <div class="testimonial">
+            <img src="team images/team member(200x200)/team member 7.jpg" alt="">
+            <div class="namet">AMIT</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolor quibusdam perferendis modi, id
+              nemo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="fcontainer">
+      <div class="sec aboutus">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio alias similique illo. Veritatis ipsum quia
+          voluptas quod earum distinctio, sit dolore quos facere quibusdam. Illum?</p>
+
+        <ul class="sci">
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="sec quickLinks">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="sec contact">
+        <h2>Contact Info</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+            <span>IIIT Una, Himachal Pradesh <br> INDIA</span>
+          </li>
+          <li>
+            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <p><a href="tel:+91 987 654 3210">+91 987 654 3210</a></p>
+          </li>
+          <li>
+            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <p><a href="mailto:kdjfo@.com">force@iiitu.ac.in</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- JS for ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <!-- Script for opening and closing the FAQ -->
+  <script>
+
+    // For  FAQ1
+    var faqtxtdiv1 = document.getElementById("paradiv1");
+    var plus1 = document.getElementById("plusid1");
+    var minus1 = document.getElementById("minusid1");
+
+    function maxfaq1() {
+      faqtxtdiv1.style.height = "0";
+      minus1.style.display = "block";
+      plus1.style.display = "none";
+    }
+
+    function minfaq1() {
+      faqtxtdiv1.style.height = "fit-content";
+      plus1.style.display = "block";
+      minus1.style.display = "none";
+    }
+
+    // For FAQ2
+
+    var faqtxtdiv2 = document.getElementById("paradiv2");
+    var plus2 = document.getElementById("plusid2");
+    var minus2 = document.getElementById("minusid2");
+
+    function maxfaq2() {
+      faqtxtdiv2.style.height = "0";
+      minus2.style.display = "block";
+      plus2.style.display = "none";
+    }
+
+    function minfaq2() {
+      faqtxtdiv2.style.height = "fit-content";
+      plus2.style.display = "block";
+      minus2.style.display = "none";
+    }
+
+    // For FAQ3
+
+    var faqtxtdiv3 = document.getElementById("paradiv3");
+    var plus3 = document.getElementById("plusid3");
+    var minus3 = document.getElementById("minusid3");
+
+    function maxfaq3() {
+      faqtxtdiv3.style.height = "0";
+      minus3.style.display = "block";
+      plus3.style.display = "none";
+    }
+
+    function minfaq3() {
+      faqtxtdiv3.style.height = "fit-content";
+      plus3.style.display = "block";
+      minus3.style.display = "none";
+    }
+
+    // For FAQ4
+    var faqtxtdiv4 = document.getElementById("paradiv4");
+    var plus4 = document.getElementById("plusid4");
+    var minus4 = document.getElementById("minusid4");
+
+    function maxfaq4() {
+      faqtxtdiv4.style.height = "0";
+      minus4.style.display = "block";
+      plus4.style.display = "none";
+    }
+
+    function minfaq4() {
+      faqtxtdiv4.style.height = "fit-content";
+      plus4.style.display = "block";
+      minus4.style.display = "none";
+    }
+
+    // For FAQ5
+    var faqtxtdiv5 = document.getElementById("paradiv5");
+    var plus5 = document.getElementById("plusid5");
+    var minus5 = document.getElementById("minusid5");
+
+    function maxfaq5() {
+      faqtxtdiv5.style.height = "0";
+      minus5.style.display = "block";
+      plus5.style.display = "none";
+    }
+
+    function minfaq5() {
+      faqtxtdiv5.style.height = "fit-content";
+      plus5.style.display = "block";
+      minus5.style.display = "none";
+    }
+  </script>
+
+
+
+
+
+
+
+  <!-- JS for scroll animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 500,
+    });
+  </script>
+
+
+  <!-- JS for Preloader -->
+  <script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
+  </script>
+
+  <!-- -------------- JavaScript for Toggle Menu -------------- -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-250px";
+    }
+  </script>
+
+
+</body>
+
+</html>
